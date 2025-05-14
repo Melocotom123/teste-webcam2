@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Captura de Foto</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <div class="container">
+    <h2>Visualização da Câmera</h2>
+
+    <video id="video" autoplay playsinline></video>
+    <img id="placeholder" src="pablo do arrocha.png" style="display: none;" width="320" height="240">
+
+    <div class="botoes">
+      <button onclick="abrirWebcam()">Abrir Webcam</button>
+      <button onclick="fecharWebcam()">Fechar Webcam</button>
+      <button onclick="tirarFoto()">Tirar Foto e Baixar</button>
+    </div>
+
+    <canvas id="canvas" width="320" height="240"></canvas>
+  </div>
+
+  <script src="script.js" defer></script> 
+</body>
+</html>
