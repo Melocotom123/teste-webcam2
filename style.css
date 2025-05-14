@@ -1,0 +1,75 @@
+/* Fonte bonita */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+video, img#placeholder, canvas {
+  width: 320px;
+  height: 240px;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  background: #e5e7eb;
+  display: none;
+  margin: 0 auto;
+}
+
+video.mostrar,
+img#placeholder.mostrar,
+canvas.mostrar {
+  display: block;
+}
+
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+#canvas {
+  display: none;
+}
